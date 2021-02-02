@@ -42,6 +42,12 @@ GEM
       cucumber-messages (~> 13.0, >= 13.0.1)
     diff-lcs (1.4.4)
     ffi (1.14.2)
+    google-protobuf (3.14.0)
+    googleapis-common-protos-types (1.0.6)
+      google-protobuf (~> 3.14)
+    grpc (1.35.0)
+      google-protobuf (~> 3.14)
+      googleapis-common-protos-types (~> 1.0)
     i18n (1.8.8)
       concurrent-ruby (~> 1.0)
     middleware (0.1.0)
@@ -79,6 +85,7 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber
+  grpc
   rake
   rspec
 

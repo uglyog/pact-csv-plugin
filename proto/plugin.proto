@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package io.pact.plugin;
+
+message InitPluginRequest {
+
+}
+
+message InitPluginResponse {
+
+}
+
+service PactPlugin {
+  rpc InitPlugin(InitPluginRequest) returns (InitPluginResponse);
+}

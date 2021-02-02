@@ -1,0 +1,10 @@
+{
+  "manifestVersion": 1,
+  "pluginFormatVersion": 1,
+  "name": "pact-csv",
+  "version": "0.0.0",
+  "executableType": "ruby",
+  "minimumRequiredVersion": "2.7.2",
+  "entryPoint": "main.rb",
+  "dependencies": []
+}
