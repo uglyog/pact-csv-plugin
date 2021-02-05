@@ -35,6 +35,7 @@ port = s.add_http2_port('0.0.0.0:0', :this_port_is_insecure)
 s.handle(PluginServer.new(server_key))
 
 puts({ 'port' => port, 'serverKey' => server_key }.to_json)
+STDOUT.flush
 
 health_checker = Grpc::Health::Checker.new
 health_checker.add_status(
