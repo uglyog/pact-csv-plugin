@@ -48,6 +48,7 @@ GEM
     grpc (1.35.0)
       google-protobuf (~> 3.14)
       googleapis-common-protos-types (~> 1.0)
+    grpc-tools (1.35.0)
     i18n (1.8.8)
       concurrent-ruby (~> 1.0)
     middleware (0.1.0)
@@ -86,6 +87,7 @@ PLATFORMS
 DEPENDENCIES
   cucumber
   grpc
+  grpc-tools
   rake
   rspec
 

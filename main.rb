@@ -16,19 +16,9 @@ require 'plugin_pb'
 require 'plugin_services_pb'
 require 'grpc/health/checker'
 require 'grpc/health/v1/health_services_pb'
+require 'plugin_service'
 
 server_key = SecureRandom.base64(20)
-
-class PluginServer < Io::Pact::Plugin::PactPlugin::Service
-  def initialize(server_key)
-    @server_key = server_key
-  end
-
-  def init_plugin(req, _unused_call)
-    puts 'init_plugin OK'
-    Io::Pact::Plugin::InitPluginResponse.new
-  end
-end
 
 s = GRPC::RpcServer.new
 port = s.add_http2_port('0.0.0.0:0', :this_port_is_insecure)

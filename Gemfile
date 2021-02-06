@@ -6,4 +6,5 @@ gem 'grpc'
 
 group :development, :test do
   gem 'rspec'
+  gem 'grpc-tools'
 end

@@ -3,11 +3,17 @@ syntax = "proto3";
 package io.pact.plugin;
 
 message InitPluginRequest {
-
+  string implementation = 1;
+  string version = 2;
 }
 
 message InitPluginResponse {
-
+  message CatalogueEntry {
+    string type = 1;
+    string key = 2;
+    map<string, string> values = 3;
+  }
+  repeated CatalogueEntry catalogue = 1;
 }
 
 service PactPlugin {
